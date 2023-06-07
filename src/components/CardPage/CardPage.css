@@ -1,0 +1,82 @@
+  .button-input-wrapper {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffff;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .card-list {
+    padding: 20px;
+    color: white;
+    box-shadow: 1px 1px 1px 1px solid gray;
+  }
+
+
+  .tab-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .tab-buttons button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #BEBEBE;
+    cursor: pointer;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    letter-spacing: 1px;
+  }
+
+  .tab-buttons button.active {
+    background-color: #47BA68;
+  }
+
+  .input-box {
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+    border: 1px solid gray;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card-type {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card-details {
+    margin-top: 10px;
+  }
+
+  .filter-dropdown {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-list {
+      grid-template-columns: 1fr;
+    }
+  }
